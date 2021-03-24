@@ -149,7 +149,7 @@ int main()
     //Time how fast we can build
     //Vector, list, queue
     auto vectormilliseconds = TimeFunc([&]() {BuildVector(v, size); });
-  	auto listmilliseconds = TimeFunc([&]() {BuildList(l, size); });
+    auto listmilliseconds = TimeFunc([&]() {BuildList(l, size); });
     auto dequemilliseconds = TimeFunc([&]() {BuildDeque(d, size); });
 
 
@@ -161,7 +161,7 @@ int main()
     //Time how fast we can search
     //Vector, list, queue
     vectormilliseconds = TimeFunc([&]() {SearchVector(v, size); });
-	  listmilliseconds = TimeFunc([&]() {SearchList(l, size); });
+    listmilliseconds = TimeFunc([&]() {SearchList(l, size); });
     dequemilliseconds = TimeFunc([&]() {SearchDeque(d, size); });
 
 
@@ -172,7 +172,7 @@ int main()
     //Time how fast we can delete
     //Vector, list, queue
     vectormilliseconds = TimeFunc([&]() {SortVector(v, size); });
-	  listmilliseconds = TimeFunc([&]() {SortList(l, size); });
+    listmilliseconds = TimeFunc([&]() {SortList(l, size); });
     dequemilliseconds = TimeFunc([&]() {SortDeque(d, size); });
 
     cout<<"Vector Sort time: " << vectormilliseconds << endl;
